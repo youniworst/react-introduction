@@ -1,13 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
+import User from './User';
 
+
+import './index.css'
 const root = ReactDOM.createRoot(document.getElementById('root'));
+const user = { name: "Test", avatar: "https://joeschmoe.io/api/v1/test", email: "test@test.com", city: "Odessa", dob: "21.01.2000" }
 root.render(
   <React.StrictMode>
-    <App />
+    <User user={user}/>
   </React.StrictMode>
 );
 
